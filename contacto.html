@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopial - Contacto</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.16/tailwind.min.css">
+</head>
+<body>
+  <header class="bg-gray-900 text-white py-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="index.html" class="text-4xl font-bold text-purple-500">Shopial</a>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="index.html" class="hover:text-gray-400">Inicio</a></li>
+          <li><a href="productos.html" class="hover:text-gray-400">Productos</a></li>
+          <li><a href="descuentos.html" class="hover:text-gray-400">Descuentos Navideños</a></li>
+          <li><a href="nosotros.html" class="hover:text-gray-400">Nosotros</a></li>
+          <li><a href="contacto.html" class="hover:text-gray-400">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="py-8 text-center">
+      <h2 class="text-4xl font-bold mb-6">Contáctanos</h2>
+      <form id="contactForm" class="max-w-md mx-auto">
+        <div class="mb-4">
+          <label for="nombre" class="block text-lg font-bold mb-2">Nombre</label>
+          <input type="text" id="nombre" class="w-full p-3 border border-gray-300 rounded" placeholder="Tu nombre">
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-lg font-bold mb-2">Correo Electrónico</label>
+          <input type="email" id="email" class="w-full p-3 border border-gray-300 rounded" placeholder="Tu correo electrónico">
+        </div>
+        <div class="mb-4">
+          <label for="mensaje" class="block text-lg font-bold mb-2">Mensaje</label>
+          <textarea id="mensaje" class="w-full p-3 border border-gray-300 rounded" rows="4" placeholder="Escribe tu mensaje"></textarea>
+        </div>
+        <button type="submit" class="bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 px-4 rounded">Enviar</button>
+      </form>
+
+      <!-- Mensaje de agradecimiento -->
+      <div id="thankYouMessage" class="hidden text-center mt-6">
+        <h3 class="text-2xl font-bold text-gray-800">¡Gracias por tu preferencia! 😊</h3>
+        <p class="text-gray-600">Tu mensaje ha sido enviado correctamente. Nos pondremos en contacto contigo pronto.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-900 text-white py-4 text-center">
+    &copy; 2024 Shopial - Todos los derechos reservados.
+  </footer>
+
+  <script>
+    // Función para mostrar el mensaje de agradecimiento
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Previene el envío del formulario para mostrar el mensaje de agradecimiento
+
+      // Ocultar el formulario
+      document.getElementById("contactForm").classList.add("hidden");
+
+      // Mostrar el mensaje de agradecimiento
+      document.getElementById("thankYouMessage").classList.remove("hidden");
+    });
+  </script>
+</body>
+</html>
