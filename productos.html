@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopial - Productos</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.16/tailwind.min.css">
+  <style>
+    .header {
+      background-color: #1f2937; /* Fondo negro */
+      color: white;
+    }
+    .banner {
+      background-image: url('https://via.placeholder.com/1920x500.png?text=Productos+Shopial');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 80px 0;
+    }
+    .banner h1 {
+      font-size: 3rem;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+    .category-button {
+      background-color: #4c1d95; /* Morado */
+      color: white;
+    }
+    .category-button:hover {
+      background-color: #6b21a8; /* Morado más oscuro en hover */
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header py-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="index.html" class="text-4xl font-bold text-purple-500">Shopial</a>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="index.html" class="hover:text-gray-200">Inicio</a></li>
+          <li><a href="productos.html" class="hover:text-gray-200">Productos</a></li>
+          <li><a href="descuentos.html" class="hover:text-gray-200">Descuentos Navideños</a></li>
+          <li><a href="nosotros.html" class="hover:text-gray-200">Nosotros</a></li>
+          <li><a href="contacto.html" class="hover:text-gray-200">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="banner text-center">
+    <h1 class="text-4xl font-bold">Explora nuestros productos</h1>
+    <p class="mt-4 text-lg">Encuentra lo que buscas en diferentes categorías.</p>
+  </div>
+
+  <main>
+    <section class="py-8">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-6">Elige una categoría</h2>
+        <div class="flex justify-center mb-6">
+          <button id="aireLibreBtn" class="category-button px-6 py-2 rounded-md mr-4">Aire Libre</button>
+          <button id="electronicaBtn" class="category-button px-6 py-2 rounded-md mr-4">Electrónica</button>
+          <button id="hogarBtn" class="category-button px-6 py-2 rounded-md">Hogar</button>
+        </div>
+
+        <!-- Productos Aire Libre -->
+        <div id="aireLibre" class="grid grid-cols-2 md:grid-cols-5 gap-4 hidden">
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/150?text=Mochila+de+Senderismo" alt="Mochila de Senderismo" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-bold mb-2">Mochila de Senderismo</h3>
+              <p class="text-gray-800 font-semibold">$49.99</p>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/150?text=Tienda+de+Campaña" alt="Tienda de Campaña" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-bold mb-2">Tienda de Campaña</h3>
+              <p class="text-gray-800 font-semibold">$99.99</p>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/150?text=Linterna+LED" alt="Linterna LED" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-bold mb-2">Linterna LED</h3>
+              <p class="text-gray-800 font-semibold">$19.99</p>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/150?text=Gafas+de+Sol+Deportivas" alt="Gafas de Sol Deportivas" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-bold mb-2">Gafas de Sol Deportivas</h3>
+              <p class="text-gray-800 font-semibold">$29.99</p>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/150?text=Paracaídas+de+Emergencia" alt="Paracaídas de Emergencia" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-bold mb-2">Paracaídas de Emergencia</h3>
+              <p class="text-gray-800 font-semibold">$39.99</p>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/150?text=Reloj+Deportivo" alt="Reloj Deportivo" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-bold mb-2">Reloj Deportivo</h3>
+              <p class="text-gray-800 font-semibold">$59.99</p>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/150?text=Botellas+de+Agua" alt="Botellas de Agua" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-bold mb-2">Botellas de Agua</h3>
+              <p class="text-gray-800 font-semibold">$15.99</p>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/150?text=Sombrero+de+Pesca" alt="Sombrero de Pesca" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-bold mb-2">Sombrero de Pesca</h3>
+              <p class="text-gray-800 font-semibold">$19.99</p>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/150?text=Chaqueta+Deportiva" alt="Chaqueta Deportiva" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-bold mb-2">Chaqueta Deportiva</h3>
+              <p class="text-gray-800 font-semibold">$79.99</p>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/150?text=Carpa+de+Picnic" alt="Carpa de Picnic" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-bold mb-2">Carpa de Picnic</h3>
+              <p class="text-gray-800 font-semibold">$89.99</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Productos Electrónica -->
+        <div id="electronica" class="grid grid-cols-2 md:grid-cols-5 gap-4 hidden">
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/150?text=Smartphone+5G" alt="Smartphone 5G" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-bold mb-2">Smartphone 5G</h3>
+              <p class="text-gray-800 font-semibold">$599.99</p>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/150?text=Auriculares+Bluetooth" alt="Auriculares Bluetooth" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-bold mb-2">Auriculares Bluetooth</h3>
+              <p class="text-gray-800 font-semibold">$99.99</p>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/150?text=Smartwatch+Deportivo" alt="Smartwatch Deportivo" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-bold mb-2">Smartwatch Deportivo</h3>
+              <p class="text-gray-800 font-semibold">$199.99</p>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/150?text=Tablet+10+Pulgadas" alt="Tablet 10 Pulgadas" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-bold mb-2">Tablet 10 Pulgadas</h3>
+              <p class="text-gray-800 font-semibold">$249.99</p>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/150?text=Lentes+de+Realidad+Virtual" alt="Lentes de Realidad Virtual" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-bold mb-2">Lentes de Realidad Virtual</h3>
+              <p class="text-gray-800 font-semibold">$149.99</p>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/150?text=Ratón+Ergonómico" alt="Ratón Ergonómico" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-bold mb-2">Ratón Ergonómico</h3>
+              <p class="text-gray-800 font-semibold">$29.99</p>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/150?text=Teclado+Mecánico" alt="Teclado Mecánico" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-bold mb-2">Teclado Mecánico</h3>
+              <p class="text-gray-800 font-semibold">$129.99</p>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/150?text=Monitor+24+Pulgadas" alt="Monitor 24 Pulgadas" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-bold mb-2">Monitor 24 Pulgadas</h3>
+              <p class="text-gray-800 font-semibold">$179.99</p>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/150?text=Altavoces+Bluetooth" alt="Altavoces Bluetooth" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-bold mb-2">Altavoces Bluetooth</h3>
+              <p class="text-gray-800 font-semibold">$89.99</p>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/150?text=Camara+Digital" alt="Cámara Digital" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-bold mb-2">Cámara Digital</h3>
+              <p class="text-gray-800 font-semibold">$399.99</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Productos Hogar -->
+        <div id="hogar" class="grid grid-cols-2 md:grid-cols-5 gap-4 hidden">
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/150?text=Ventilador+de+Techo" alt="Ventilador de Techo" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-bold mb-2">Ventilador de Techo</h3>
+              <p class="text-gray-800 font-semibold">$99.99</p>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/150?text=Alfombra+Moderna" alt="Alfombra Moderna" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-bold mb-2">Alfombra Moderna</h3>
+              <p class="text-gray-800 font-semibold">$79.99</p>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/150?text=Espejo+Decorativo" alt="Espejo Decorativo" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-bold mb-2">Espejo Decorativo</h3>
+              <p class="text-gray-800 font-semibold">$49.99</p>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/150?text=Lámpara+de+Escritorio" alt="Lámpara de Escritorio" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-bold mb-2">Lámpara de Escritorio</h3>
+              <p class="text-gray-800 font-semibold">$34.99</p>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/150?text=Silla+Ergonómica" alt="Silla Ergonómica" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-bold mb-2">Silla Ergonómica</h3>
+              <p class="text-gray-800 font-semibold">$199.99</p>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/150?text=Escritorio+Moderno" alt="Escritorio Moderno" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-bold mb-2">Escritorio Moderno</h3>
+              <p class="text-gray-800 font-semibold">$229.99</p>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/150?text=Cortinas+De+Luz" alt="Cortinas de Luz" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-bold mb-2">Cortinas de Luz</h3>
+              <p class="text-gray-800 font-semibold">$59.99</p>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/150?text=Espejo+de+Pared" alt="Espejo de Pared" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-bold mb-2">Espejo de Pared</h3>
+              <p class="text-gray-800 font-semibold">$79.99</p>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/150?text=Sillón+Reclinable" alt="Sillón Reclinable" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-bold mb-2">Sillón Reclinable</h3>
+              <p class="text-gray-800 font-semibold">$399.99</p>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/150?text=Estantería+de+Madera" alt="Estantería de Madera" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-bold mb-2">Estantería de Madera</h3>
+              <p class="text-gray-800 font-semibold">$159.99</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-800 text-white text-center py-4">
+    <p>&copy; 2024 Shopial. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    document.getElementById("aireLibreBtn").addEventListener("click", function() {
+      document.getElementById("aireLibre").classList.remove("hidden");
+      document.getElementById("electronica").classList.add("hidden");
+      document.getElementById("hogar").classList.add("hidden");
+    });
+
+    document.getElementById("electronicaBtn").addEventListener("click", function() {
+      document.getElementById("electronica").classList.remove("hidden");
+      document.getElementById("aireLibre").classList.add("hidden");
+      document.getElementById("hogar").classList.add("hidden");
+    });
+
+    document.getElementById("hogarBtn").addEventListener("click", function() {
+      document.getElementById("hogar").classList.remove("hidden");
+      document.getElementById("aireLibre").classList.add("hidden");
+      document.getElementById("electronica").classList.add("hidden");
+    });
+  </script>
+</body>
+</html>
