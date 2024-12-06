@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopial - Descuentos Navideños</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.16/tailwind.min.css">
+  <style>
+    /* Estilo navideño */
+    .header {
+      background-color: #c0392b;
+      color: white;
+    }
+    .banner {
+      background-image: url('https://via.placeholder.com/1920x500.png?text=Navidad+Shopial');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 80px 0;
+    }
+    .banner h1 {
+      font-size: 3rem;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+    .product-card {
+      transition: transform 0.3s ease;
+    }
+    .product-card:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header py-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="index.html" class="text-4xl font-bold text-yellow-500">Shopial</a>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="index.html" class="hover:text-gray-200">Inicio</a></li>
+          <li><a href="productos.html" class="hover:text-gray-200">Productos</a></li>
+          <li><a href="descuentos.html" class="hover:text-gray-200">Descuentos Navideños</a></li>
+          <li><a href="nosotros.html" class="hover:text-gray-200">Nosotros</a></li>
+          <li><a href="contacto.html" class="hover:text-gray-200">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="banner text-center">
+    <h1 class="text-4xl font-bold">¡Descuentos Navideños en Shopial!</h1>
+    <p class="mt-4 text-lg">Aprovecha nuestros descuentos especiales en esta temporada festiva.</p>
+  </div>
+
+  <main>
+    <section class="py-8">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-6 text-red-600">Productos con Descuento</h2>
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+          <!-- Producto 1: Smartphone 5G -->
+          <div class="product-card bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/150?text=Smartphone+5G" alt="Smartphone 5G" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-bold mb-2">Smartphone 5G</h3>
+              <p class="text-gray-800 font-bold">$499.99 <span class="line-through text-gray-500">$549.99</span></p>
+            </div>
+          </div>
+          <!-- Producto 2: Auriculares Bluetooth -->
+          <div class="product-card bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/150?text=Auriculares+Bluetooth" alt="Auriculares Bluetooth" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-bold mb-2">Auriculares Bluetooth</h3>
+              <p class="text-gray-800 font-bold">$79.99 <span class="line-through text-gray-500">$99.99</span></p>
+            </div>
+          </div>
+          <!-- Producto 3: Cámara de Seguridad -->
+          <div class="product-card bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/150?text=Cámara+de+Seguridad" alt="Cámara de Seguridad" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-bold mb-2">Cámara de Seguridad</h3>
+              <p class="text-gray-800 font-bold">$149.99 <span class="line-through text-gray-500">$179.99</span></p>
+            </div>
+          </div>
+          <!-- Producto 4: Silla de Oficina -->
+          <div class="product-card bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/150?text=Silla+de+Oficina" alt="Silla de Oficina" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-bold mb-2">Silla de Oficina</h3>
+              <p class="text-gray-800 font-bold">$120.99 <span class="line-through text-gray-500">$149.99</span></p>
+            </div>
+          </div>
+          <!-- Producto 5: Consola PlayStation 5 -->
+          <div class="product-card bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/150?text=Consola+PS5" alt="Consola PlayStation 5" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-bold mb-2">Consola PlayStation 5</h3>
+              <p class="text-gray-800 font-bold">$499.99 <span class="line-through text-gray-500">$599.99</span></p>
+            </div>
+          </div>
+          <!-- Producto 6: Mochila de Senderismo -->
+          <div class="product-card bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/150?text=Mochila+de+Senderismo" alt="Mochila de Senderismo" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-bold mb-2">Mochila de Senderismo</h3>
+              <p class="text-gray-800 font-bold">$45.99 <span class="line-through text-gray-500">$55.99</span></p>
+            </div>
+          </div>
+          <!-- Producto 7: Tienda de Campaña -->
+          <div class="product-card bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/150?text=Tienda+de+Campaña" alt="Tienda de Campaña" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-bold mb-2">Tienda de Campaña</h3>
+              <p class="text-gray-800 font-bold">$129.99 <span class="line-through text-gray-500">$159.99</span></p>
+            </div>
+          </div>
+          <!-- Producto 8: Linterna LED Recargable -->
+          <div class="product-card bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/150?text=Linterna+LED" alt="Linterna LED Recargable" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-bold mb-2">Linterna LED Recargable</h3>
+              <p class="text-gray-800 font-bold">$19.99 <span class="line-through text-gray-500">$29.99</span></p>
+            </div>
+          </div>
+          <!-- Producto 9: Gafas de Sol Deportivas -->
+          <div class="product-card bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/150?text=Gafas+de+Sol+Deportivas" alt="Gafas de Sol Deportivas" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-bold mb-2">Gafas de Sol Deportivas</h3>
+              <p class="text-gray-800 font-bold">$39.99 <span class="line-through text-gray-500">$49.99</span></p>
+            </div>
+          </div>
+          <!-- Producto 10: Paracaídas de Emergencia -->
+          <div class="product-card bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/150?text=Paracaídas+de+Emergencia" alt="Paracaídas de Emergencia" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-bold mb-2">Paracaídas de Emergencia</h3>
+              <p class="text-gray-800 font-bold">$79.99 <span class="line-through text-gray-500">$99.99</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
